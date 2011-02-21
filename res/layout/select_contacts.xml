@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal">
+	<RelativeLayout
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:paddingLeft="5dip" android:orientation="vertical"
+		android:layout_weight="1">
+		<ListView android:id="@+id/android:list"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		<TextView android:id="@+id/name" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="center_vertical" android:singleLine="true"
+			android:paddingRight="6dip" android:layout_alignParentTop="true"
+			android:layout_width="wrap_content" />
+		<TextView android:id="@+id/label" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="2dip"
+			android:singleLine="true" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textStyle="bold" android:layout_below="@+id/name" />
+		<TextView android:id="@+id/number" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:singleLine="true" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_toRightOf="@id/label" android:layout_alignBaseline="@id/label" />
+	</RelativeLayout>
+	<CheckBox android:id="@+id/selected" android:layout_height="fill_parent"
+		android:layout_weight="0" android:layout_width="wrap_content"
+		android:layout_marginRight="5dip" android:focusable="false"
+		android:clickable="false" />
+</LinearLayout>

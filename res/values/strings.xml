@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, SettingsActivity!</string>
     <string name="app_name">Sukey Cascade</string>
+
+	<string name="pref_enabled">Enabled</string>
+	<string name="prefsumm_enabled_yes">Alerts will be forwarded by text</string>
+	<string name="prefsumm_enabled_no">No texts will be sent</string><string name="prefgrp_buddy_list">Buddy List</string>
+	<string name="pref_buddy_list">Buddy list</string>
+	<string name="prefsumm_buddy_list">Alerts will be texted to these people</string>
+	<string name="prefgrp_text_restrictions">Text Restrictions</string>
+	<string name="pref_restrict_day">Restrict by day</string>
+	<string name="pref_max_per_day">Max per day</string>
+	<string name="prefsumm_max_per_day">Limit number of texts sent each day</string>
+	<string name="pref_restrict_person">Restrict by person</string>
+	<string name="pref_max_per_person">Max per person</string>
+	<string name="prefsumm_max_per_person">Limit number of texts sent per person</string>
+	<string name="prefgrp_notifications">Notifications</string>
+	<string name="pref_confirm_each">Confirm each text</string>
+	<string name="prefsumm_confirm_each">Ask before sending each broadcast</string>
 </resources>

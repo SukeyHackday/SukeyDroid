@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference android:key="enabled"
+		android:defaultValue="true" android:disableDependentsState="false"
+		android:title="@string/pref_enabled" android:summaryOff="@string/prefsumm_enabled_no"
+		android:summaryOn="@string/prefsumm_enabled_yes" />
+	<PreferenceCategory android:title="@string/prefgrp_buddy_list">
+		<Preference android:summary="@string/prefsumm_buddy_list"
+			android:title="@string/pref_buddy_list" android:key="buddy_list"
+			android:dependency="enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/prefgrp_text_restrictions">
+		<CheckBoxPreference android:dependency="enabled"
+			android:key="restrict_day" android:title="@string/pref_restrict_day"
+			android:defaultValue="false" />
+		<EditTextPreference android:key="max_per_day"
+			android:summary="@string/prefsumm_max_per_day" android:title="@string/pref_max_per_day"
+			android:numeric="integer" android:inputType="number"
+			android:dependency="restrict_day" android:defaultValue="0" />
+		<CheckBoxPreference android:key="restrict_person"
+			android:title="@string/pref_restrict_person" android:dependency="enabled"
+			android:defaultValue="false" />
+		<EditTextPreference android:key="max_per_person"
+			android:summary="@string/prefsumm_max_per_person" android:dependency="restrict_person"
+			android:numeric="integer" android:inputType="number"
+			android:title="@string/pref_max_per_person" android:defaultValue="0" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/prefgrp_notifications">
+		<CheckBoxPreference android:dependency="enabled"
+			android:summary="@string/prefsumm_confirm_each" android:key="confirm_each"
+			android:title="@string/pref_confirm_each" android:defaultValue="false" />
+	</PreferenceCategory>
 </PreferenceScreen>

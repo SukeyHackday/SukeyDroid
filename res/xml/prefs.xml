@@ -15,15 +15,7 @@
 			android:defaultValue="false" />
 		<EditTextPreference android:key="max_per_day"
 			android:summary="@string/prefsumm_max_per_day" android:title="@string/pref_max_per_day"
-			android:numeric="integer" android:inputType="number"
-			android:dependency="restrict_day" android:defaultValue="0" />
-		<CheckBoxPreference android:key="restrict_person"
-			android:title="@string/pref_restrict_person" android:dependency="enabled"
-			android:defaultValue="false" />
-		<EditTextPreference android:key="max_per_person"
-			android:summary="@string/prefsumm_max_per_person" android:dependency="restrict_person"
-			android:numeric="integer" android:inputType="number"
-			android:title="@string/pref_max_per_person" android:defaultValue="0" />
+			android:dependency="restrict_day" android:defaultValue="0" android:numeric="integer" android:inputType="number"/>
 	</PreferenceCategory>
 	<PreferenceCategory android:title="@string/prefgrp_notifications">
 		<CheckBoxPreference android:dependency="enabled"

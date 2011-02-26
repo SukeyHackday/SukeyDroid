@@ -11,9 +11,6 @@
 	<string name="pref_restrict_day">Restrict by day</string>
 	<string name="pref_max_per_day">Max per day</string>
 	<string name="prefsumm_max_per_day">Limit number of texts sent each day</string>
-	<string name="pref_restrict_person">Restrict by person</string>
-	<string name="pref_max_per_person">Max per person</string>
-	<string name="prefsumm_max_per_person">Limit number of texts sent per person</string>
 	<string name="prefgrp_notifications">Notifications</string>
 	<string name="pref_confirm_each">Confirm each text</string>
 	<string name="prefsumm_confirm_each">Ask before sending each broadcast</string>

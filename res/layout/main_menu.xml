@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="horizontal">
+	<LinearLayout android:layout_height="match_parent"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_weight="1" android:gravity="center">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/map"
+			android:src="@android:drawable/ic_menu_mapmode"
+			android:layout_marginTop="25dp" android:layout_marginBottom="25dp" />
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/cascade"
+			android:src="@android:drawable/ic_menu_share"
+			android:layout_marginTop="25dp" android:layout_marginBottom="25dp" />
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/settings"
+			android:src="@android:drawable/ic_menu_preferences"
+			android:layout_marginBottom="25dp" android:layout_marginTop="25dp" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="match_parent"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_weight="1" android:gravity="center">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/compass"
+			android:src="@android:drawable/ic_menu_compass"
+			android:layout_marginBottom="25dp" android:layout_marginTop="25dp" />
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/report"
+			android:src="@android:drawable/ic_menu_send"
+			android:layout_marginBottom="25dp" android:layout_marginTop="25dp" />
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/about"
+			android:src="@android:drawable/ic_menu_info_details"
+			android:layout_marginBottom="25dp" android:layout_marginTop="25dp" />
+	</LinearLayout>
+</LinearLayout>

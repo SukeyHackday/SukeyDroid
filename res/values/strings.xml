@@ -4,7 +4,8 @@
 
 	<string name="pref_enabled">Enabled</string>
 	<string name="prefsumm_enabled_yes">Alerts will be forwarded by text</string>
-	<string name="prefsumm_enabled_no">No texts will be sent</string><string name="prefgrp_buddy_list">Buddy List</string>
+	<string name="prefsumm_enabled_no">No texts will be sent</string>
+	<string name="prefgrp_buddy_list">Buddy List</string>
 	<string name="pref_buddy_list">Buddy list</string>
 	<string name="prefsumm_buddy_list">Alerts will be texted to these people</string>
 	<string name="prefgrp_text_restrictions">Text Restrictions</string>

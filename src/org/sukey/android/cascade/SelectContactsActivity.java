@@ -7,7 +7,6 @@ import org.sukey.android.cascade.helpers.ContactAccessor;
 import android.app.ListActivity;
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -22,6 +21,7 @@ public class SelectContactsActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getListView().setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 		populateContactsLayout();
 	}
 
@@ -53,10 +53,10 @@ public class SelectContactsActivity extends ListActivity {
 		super.onListItemClick(l, v, position, id);
 		Contact contact = (Contact) l.getItemAtPosition(position);
 		CheckBox checkBox = (CheckBox) v.findViewById(R.id.selected);
-		Log.e("SelectContacts", checkBox.getTag().toString());
-		checkBox.setChecked(!checkBox.isChecked());
-		Log.e("SelectContacts", "contact with name " + contact.getName()
-				+ " and position " + position + " was clicked");
+		contact.setSelected(!contact.getSelected());
+		l.setItemChecked(position, contact.getSelected());
+		checkBox.setChecked(l.isItemChecked(position));
+		l.setItemChecked(position, checkBox.isChecked());
 	}
 
 	private static class ContactItemArrayAdapter extends ArrayAdapter<Contact> {
@@ -100,6 +100,7 @@ public class SelectContactsActivity extends ListActivity {
 			numberView.setText(contact.getNumber());
 			CheckBox checkBox = (CheckBox) view.findViewById(R.id.selected);
 			checkBox.setTag(contact.getId());
+			checkBox.setChecked(contact.getSelected());
 			return view;
 		}
 	}

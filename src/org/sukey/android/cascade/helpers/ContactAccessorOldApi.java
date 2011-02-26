@@ -37,7 +37,6 @@ public class ContactAccessorOldApi extends ContactAccessor {
 					managedCursor.getString(managedCursor
 							.getColumnIndexOrThrow(People.NUMBER)));
 			contacts.add(contact);
-			Log.e("SelectContacts[Old]", contact.toString());
 		}
 
 		return contacts;

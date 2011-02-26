@@ -47,7 +47,6 @@ public class ContactAccessorNewApi extends ContactAccessor {
 
 				Contact contact = new Contact(id, name, type, number);
 				contacts.add(contact);
-				Log.e("SelectContacts[New]", contact.toString());
 			}
 			pCur.close();
 		}

@@ -8,12 +8,27 @@ public final class Contact {
 	protected int mType;
 	protected String mName;
 	protected String mNumber;
+	protected boolean mSelected;
 
 	public Contact(String id, String name, int type, String number) {
+		this(id, name, type, number, false);
+	}
+
+	public Contact(String id, String name, int type, String number,
+			boolean selected) {
 		mId = id;
 		mName = name;
 		mType = type;
 		mNumber = number;
+		mSelected = selected;
+	}
+
+	public boolean getSelected() {
+		return mSelected;
+	}
+
+	public void setSelected(boolean selected) {
+		mSelected = selected;
 	}
 
 	public String getId() {

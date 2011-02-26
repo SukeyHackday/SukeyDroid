@@ -1,5 +1,6 @@
 package org.sukey.android.cascade;
 
+import org.sukey.android.R;
 import org.sukey.android.cascade.helpers.ContactAccessor;
 
 import android.content.Intent;

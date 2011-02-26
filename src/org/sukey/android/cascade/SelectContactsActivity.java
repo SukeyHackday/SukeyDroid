@@ -2,6 +2,7 @@ package org.sukey.android.cascade;
 
 import java.util.List;
 
+import org.sukey.android.R;
 import org.sukey.android.cascade.helpers.ContactAccessor;
 
 import android.app.ListActivity;

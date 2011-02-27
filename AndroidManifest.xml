@@ -17,8 +17,8 @@
 			android:launchMode="singleTop" android:finishOnTaskLaunch="true"
 			android:excludeFromRecents="true" />
 			  
-		<activity android:name=".map.ShowMapActivity" android:label="@string/toast_map"
-     android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".map.MapViewActivity" android:label="@string/toast_map"
+			android:theme="@android:style/Theme.NoTitleBar" />
      <uses-library android:name="com.google.android.maps" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

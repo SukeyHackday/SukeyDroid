@@ -11,7 +11,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
-import android.util.Log;
+//import android.util.Log;
 
 public class ContactAccessorNewApi extends ContactAccessor {
 

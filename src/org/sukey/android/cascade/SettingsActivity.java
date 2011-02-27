@@ -23,7 +23,6 @@ public class SettingsActivity extends PreferenceActivity implements
 		mSelectContacts.setOnPreferenceClickListener(this);
 	}
 
-	@Override
 	public boolean onPreferenceClick(Preference preference) {
 		if (preference == mSelectContacts) {
 			startActivity(new Intent(this, SelectContactsActivity.class));

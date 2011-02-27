@@ -9,7 +9,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.provider.Contacts.People;
-import android.util.Log;
+//import android.util.Log;
 
 @SuppressWarnings("deprecation")
 public class ContactAccessorOldApi extends ContactAccessor {

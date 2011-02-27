@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MenuActivity extends Activity implements OnClickListener {
 	protected ImageButton mCascadeButton;
@@ -23,7 +24,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 		if (view == mCascadeButton) {
 			Intent intent = new Intent(this, org.sukey.android.cascade.SettingsActivity.class);
 			startActivity(intent);
+			Toast.makeText(this, R.string.settings, 500).show();
 		}
 	}
-
 }

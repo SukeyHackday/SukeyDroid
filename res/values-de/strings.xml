@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SukeyDroid</string>
+
+	<string name="pref_enabled">Aktivieren</string>
+	<string name="prefsumm_enabled_yes">Benachrichtigungen per SMS weiterleiten</string>
+	<string name="prefsumm_enabled_no">Benachrichtigungen nicht weiterleiten</string>
+	<string name="prefgrp_buddy_list">Kontaktliste</string>
+	<string name="pref_buddy_list">Kontaktliste</string>
+	<string name="prefsumm_buddy_list">An diese SMS Empfänger weiterleiten</string>
+	<string name="prefgrp_text_restrictions">Automatische Sende-Limits</string>
+	<string name="pref_restrict_day">Tagesweises limit</string>
+	<string name="pref_max_per_day">Anzahl</string>
+	<string name="prefsumm_max_per_day">Einschränken wie viele SMS gesendet werden</string>
+	<string name="prefgrp_notifications">Manuelle Sende-Limits</string>
+	<string name="pref_confirm_each">Jede SMS bestätigen</string>
+	<string name="prefsumm_confirm_each">Vor dem Weiterleiten nachfragen</string>
+</resources>

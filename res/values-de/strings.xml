@@ -15,4 +15,10 @@
 	<string name="prefgrp_notifications">Manuelle Sende-Limits</string>
 	<string name="pref_confirm_each">Jede SMS bestätigen</string>
 	<string name="prefsumm_confirm_each">Vor dem Weiterleiten nachfragen</string>
+	<string name="toast_cascade">Benachrichtigungs-Kaskade</string>
+	<string name="toast_map">Lade Kartenansicht…</string>
+	<string name="toast_compass">Lade Kompassansicht…</string>
+	<string name="toast_report">Lade Reportansicht…</string>
+	<string name="toast_settings">Einstellungen</string>
+	<string name="toast_about">Über das Team (;..;)</string>	
 </resources>

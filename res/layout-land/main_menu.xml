@@ -12,6 +12,10 @@
 			android:layout_height="wrap_content" android:id="@+id/compass"
 			android:layout_marginLeft="30dp" android:layout_width="wrap_content"
 			android:layout_marginRight="30dp" />
+		<ImageButton android:src="@android:drawable/ic_menu_send"
+			android:layout_height="wrap_content" android:id="@+id/report"
+			android:layout_marginLeft="30dp" android:layout_width="wrap_content"
+			android:layout_marginRight="30dp" />
 	</TableRow>
 	<TableRow android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:layout_weight="1"
@@ -20,13 +24,6 @@
 			android:layout_height="wrap_content" android:id="@+id/cascade"
 			android:layout_marginLeft="30dp" android:layout_width="wrap_content"
 			android:layout_marginRight="30dp" />
-		<ImageButton android:src="@android:drawable/ic_menu_send"
-			android:layout_height="wrap_content" android:id="@+id/report"
-			android:layout_marginLeft="30dp" android:layout_width="wrap_content"
-			android:layout_marginRight="30dp" />
-	</TableRow>
-	<TableRow android:layout_width="wrap_content"
-		android:layout_weight="1" android:gravity="center">
 		<ImageButton android:src="@android:drawable/ic_menu_preferences"
 			android:layout_height="wrap_content" android:id="@+id/settings"
 			android:layout_marginLeft="30dp" android:layout_width="wrap_content"

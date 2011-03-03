@@ -28,7 +28,7 @@ public class MapViewActivity extends MapActivity {
 	    List<Overlay> mapOverlays = mapView.getOverlays();
 	    Drawable drawable = this.getResources().getDrawable(R.drawable.icon);
 	    
-	    MapItemizedOverlay itemizedoverlay = new MapItemizedOverlay(drawable);
+	    MapItemizedOverlay itemizedoverlay = new MapItemizedOverlay(drawable, this);
 	    
 	    GeoPoint point = new GeoPoint(51530309,-76459);
 	    OverlayItem overlayitem = new OverlayItem(point, "Hello London Hackspace!", "How do I turn this thing on?");

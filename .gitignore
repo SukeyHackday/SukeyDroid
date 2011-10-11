@@ -2,4 +2,4 @@
 /bin
 /gen
 /apk/SukeyDroid.apk
-./production.keystore
+production.keystore

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">SukeyDroid</string>
-
 	<string name="pref_enabled">Enabled</string>
 	<string name="prefsumm_enabled_yes">Alerts will be forwarded by text</string>
 	<string name="prefsumm_enabled_no">No texts will be sent</string>
 	<string name="prefgrp_buddy_list">Buddy List</string>
 	<string name="pref_buddy_list">Buddy list</string>
-	<string name="prefsumm_buddy_list">Alerts will be texted to these people</string>
+	<string name="prefsumm_buddy_list">Alerts will be sent by SMS to these people</string>
 	<string name="prefgrp_text_restrictions">Text Restrictions</string>
 	<string name="pref_restrict_day">Restrict by day</string>
 	<string name="pref_max_per_day">Max per day</string>
@@ -15,10 +14,17 @@
 	<string name="prefgrp_notifications">Notifications</string>
 	<string name="pref_confirm_each">Confirm each text</string>
 	<string name="prefsumm_confirm_each">Ask before sending each broadcast</string>
-	<string name="toast_cascade">Edit Cascade Messaging Settings</string>
-	<string name="toast_map">Map View Loading…</string>
-	<string name="toast_compass">Compass View Loading…</string>
-	<string name="toast_report">Report View Loading…</string>
-	<string name="toast_settings">Edit General settings</string>
-	<string name="toast_about">Information About the Team (;..;)</string>	
+	<string name="toast_cascade">Cascade</string>
+	<string name="toast_map">Map View</string>
+	<string name="toast_compass">Compass View</string>
+	<string name="toast_report">Report</string>
+	<string name="toast_settings">Settings</string>
+	<string name="toast_about">About</string>
+	<string name="text_color">#FFFFFF</string>
+	<string name="text_color_link">#336699</string>
+	<string name="tagline">Sukey - Keeping demonstrators safe, mobile and informed.</string>
+	<string name="support">Support: <a href="mailto:sukey.org@gmail.com">sukey.org@gmail.com</a></string>
+	<string name="website">Website: <a href="http://sukey.org/">sukey.org</a></string>
+	<string name="facebook">Facebook: <a href="http://www.facebook.com/sukey.org">Sukey page</a></string>
+	<string name="twitter">Twitter: <a href="http://twitter.com/sukeyData">@sukeyData</a></string>
 </resources>

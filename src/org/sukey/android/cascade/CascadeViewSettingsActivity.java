@@ -9,7 +9,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.Preference.OnPreferenceClickListener;
 
-public class SettingsActivity extends PreferenceActivity implements
+public class CascadeViewSettingsActivity extends PreferenceActivity implements
 		OnPreferenceClickListener {
 	Preference mSelectContacts;
 	ContactAccessor mContactAccessor = ContactAccessor.getInstance();

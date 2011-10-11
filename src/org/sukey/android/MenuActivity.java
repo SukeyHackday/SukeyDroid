@@ -20,7 +20,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_menu);
+		setContentView(R.layout.main);
 		mCascadeButton = (ImageButton)findViewById(R.id.cascade);
 		mMapButton = (ImageButton)findViewById(R.id.map);
 		mCompassButton = (ImageButton)findViewById(R.id.compass);
@@ -39,7 +39,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 
 	public void onClick(View view) {
 		if (view == mCascadeButton) {
-			Intent intent = new Intent(this, org.sukey.android.cascade.SettingsActivity.class);
+			Intent intent = new Intent(this, org.sukey.android.cascade.CascadeViewSettingsActivity.class);
 			startActivity(intent);
 			Toast.makeText(this, R.string.toast_cascade, 500).show();
 		}
@@ -49,7 +49,7 @@ public class MenuActivity extends Activity implements OnClickListener {
 			startActivity(intent);
 			Toast.makeText(this, R.string.toast_map, 500).show();
 		}
-		/*
+		
 		if (view == mCompassButton) {
 			Intent intent = new Intent(this, org.sukey.android.compass.CompassViewActivity.class);
 			startActivity(intent);
@@ -65,11 +65,11 @@ public class MenuActivity extends Activity implements OnClickListener {
 			startActivity(intent);
 			Toast.makeText(this, R.string.toast_settings, 500).show();
 		}
+		
 		if (view == mAboutButton) {
-			Intent intent = new Intent(this, org.sukey.android.map.AboutWindowActivity.class);
+			Intent intent = new Intent(this, org.sukey.android.about.AboutWindowActivity.class);
 			startActivity(intent);
 			Toast.makeText(this, R.string.toast_about, 500).show();
 		}
-		*/
 	}
 }

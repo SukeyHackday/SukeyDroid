@@ -45,7 +45,7 @@ public class SelectContactsActivity extends ListActivity {
 	private void queryContacts() {
 		List<Contact> contacts = mContactAccessor.getContactList(this);
 		ArrayAdapter<Contact> arrayAdapter = new ContactItemArrayAdapter(this,
-				R.layout.select_contacts, contacts);
+				R.layout.cascade, contacts);
 		setListAdapter(arrayAdapter);
 	}
 

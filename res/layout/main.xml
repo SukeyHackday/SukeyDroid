@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" android:orientation="vertical">
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/Actionbar" android:layout_height="wrap_content">
+        <Button android:text="Button" android:layout_width="wrap_content" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true"></Button>
+        <EditText android:inputType="textPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/button1">
+            <requestFocus></requestFocus>
+        </EditText>
+    </RelativeLayout>
+    <!-- Match_parent for new Api level fill_parent for old -->
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_mapmode"
+        	android:id="@+id/map"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_compass"
+            android:id="@+id/compass"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_share"
+            android:id="@+id/cascade"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+            
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_send"
+            android:id="@+id/report"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_edit"
+        	android:id="@+id/settings"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        <ImageButton
+        	android:src="@android:drawable/ic_menu_info_details"
+        	android:id="@+id/about"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    
+    
+</LinearLayout>

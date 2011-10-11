@@ -1,17 +1,13 @@
 package org.sukey.android.map;
 
-import java.util.List;
-
 import org.sukey.android.R;
 
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
-import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
-import com.google.android.maps.Overlay;
-import com.google.android.maps.OverlayItem;
 
 public class MapViewActivity extends MapActivity {
     /** Called when the activity is first created. */
@@ -22,19 +18,12 @@ public class MapViewActivity extends MapActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.map_view);
+		setContentView(R.layout.map);
 		MapView mapView = (MapView) findViewById(R.id.mapview);
 	    mapView.setBuiltInZoomControls(true);
-	    List<Overlay> mapOverlays = mapView.getOverlays();
-	    Drawable drawable = this.getResources().getDrawable(R.drawable.icon);
-	    
-	    MapItemizedOverlay itemizedoverlay = new MapItemizedOverlay(drawable, this);
-	    
-	    GeoPoint point = new GeoPoint(51530309,-76459);
-	    OverlayItem overlayitem = new OverlayItem(point, "Hello London Hackspace!", "How do I turn this thing on?");
-	     
-	    itemizedoverlay.addOverlay(overlayitem);
-	    mapOverlays.add(itemizedoverlay);
-	    
+	    Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=http://sukey.org/mapview.kml")); 
+	    Uri uri1 = Uri.parse("geo:0,0?q=http://sukey.org/mapview.kml"); //this line works!
+	    mapIntent.setData(uri1); 
+	    startActivity(Intent.createChooser(mapIntent, "Sukey Live Map")); 	    
 	}
 }

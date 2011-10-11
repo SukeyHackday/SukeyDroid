@@ -4,21 +4,46 @@
 	android:versionName="1.0" package="org.sukey.android">
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 	<uses-library android:name="com.google.android.maps" />
-		<activity android:name=".MenuActivity" android:label="@string/app_name">
+		<activity
+			android:name=".MenuActivity" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
 
-		<activity android:name=".cascade.SettingsActivity" android:label="@string/toast_cascade" />
+		<activity
+			android:name=".cascade.CascadeViewSettingsActivity"
+			android:label="@string/toast_cascade"/>
 
-		<activity android:name=".cascade.SelectContactsActivity"
-			android:launchMode="singleTop" android:finishOnTaskLaunch="true"
+		<activity
+			android:name=".cascade.SelectContactsActivity"
+			android:launchMode="singleTop"
+			android:finishOnTaskLaunch="true"
 			android:excludeFromRecents="true" />
-			  
-		<activity android:name=".map.MapViewActivity" android:label="@string/toast_map"
+
+		<activity
+			android:name=".map.MapViewActivity"
+			android:label="@string/toast_map"
 			android:theme="@android:style/Theme.NoTitleBar" />
+		
+		<activity
+			android:name=".compass.CompassViewActivity"
+			android:label="@string/toast_compass"/>
+			
+		<activity
+			android:name=".report.ReportViewActivity"
+			android:label="@string/toast_report"/>			
+
+		<activity
+			android:name=".settings.SettingsMenuActivity"
+			android:label="@string/toast_settings"/>
+		
+		<activity
+			android:name=".about.AboutWindowActivity"
+			android:label="@string/toast_about"/>
+		
+			  
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.BROADCAST_SMS" />
